@@ -1,0 +1,437 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    color: blue;
+}
+
+
+nav{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    box-sizing: border-box;
+}
+
+.navBar{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 50px;
+}
+
+.navBar .active{
+    color: black; /* Warna highlight */
+    border-bottom: 2px solid black; /* Garis bawah sebagai highlight */
+    font-weight: bold;
+}
+
+.follow-us{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(80, 170, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    height: 60px;
+}
+
+button:hover{
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+}
+
+/*main*/
+
+.title-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.title h1{
+    font-size: 70px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-images{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    margin: 70px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.head-images img{
+    display: flex;
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.description-section{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgb(118, 197, 197);
+}
+
+.description h1{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 50px;
+}
+
+.description p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.desc-images img{
+    width: 500px;
+    height: 500px;
+    padding-right: 50px;
+    
+}
+
+.description-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.structure{
+    padding-bottom: 50px;
+}
+
+.structure h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.family h3{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.family p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 150%;
+}
+
+.crest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.crest img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+.valkyrie-section{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgb(238, 233, 121);
+}
+
+.valkyrie-title h1{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 50px;
+}
+
+.valkyrie-image img{
+    width: 300px;
+    height: 300px;
+
+}
+
+.valkyrie-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.valkyrie-image{
+    padding-left: 70px;
+}
+
+.valkyrie p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+    font-size: 150%;
+}
+
+
+.knight-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.knight-title h1{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 50px;
+}
+
+.knight p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 150%;
+}
+
+.knight-image img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.knight-image{
+    padding-right: 70px;
+
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    z-index: 1000;
+    border: none;
+    position: relative;
+}
+
+.hamburger {
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+    content: '';
+    position: absolute; 
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-toggle .hamburger::before {
+    transform: translateY(-10px);
+}
+
+.nav-toggle .hamburger::after {
+    transform: translateY(10px);
+}
+
+
+@media(max-width: 768px){
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle .hamburger {
+        display: flex;
+        
+    }
+
+    .navBar {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #f9f9f9;;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        z-index: 999;
+        padding: 20px 0;
+    }
+
+    .navBar a{
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .navBar.active {
+        display: flex;
+    }
+
+    .navBar li {
+        margin: 20px 0;
+    }
+
+    .navBar li a {
+        padding: 20px 20px;
+    }
+
+    .description-section,
+    .valkyrie-info,
+    .knight-info {
+        flex-direction: column;
+    }
+
+    .description,
+    .valkyrie,
+    .knight {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .desc-images img,
+    .valkyrie-image img,
+    .knight-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .family {
+        text-align: center;
+    }
+
+    .family p {
+        font-size: 15px;
+    }
+
+    .family img {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .structure h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px){
+    .navBar li a {
+        font-size: 18px;
+    }
+
+    .nav-toggle .hamburger,
+    .nav-toggle .hamburger::before,
+    .nav-toggle .hamburger::after {
+        width: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navBar {
+        margin-bottom: 20px;
+    }
+
+    .title-section h1,
+    .structure h1,
+    .valkyrie-title h1,
+    .knight-title h1 {
+        font-size: 24px;
+    }
+
+    .description h1 {
+        font-size: 22px;
+    }
+
+    
+
+    .description p,
+    .family p,
+    .valkyrie p,
+    .knight p {
+        font-size: 14px;
+    }
+
+    .desc-images img,
+    .crest img,
+    .valkyrie-image img,
+    .knight-image img {
+        width: 100%;
+    
+    }
+
+    .family img {
+        margin-top: 10px;
+    }
+
+    .head-images img{
+        width: 50%;
+    }
+}

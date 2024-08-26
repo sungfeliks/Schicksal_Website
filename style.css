@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    color: blue;
+}
+
+
+nav{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    box-sizing: border-box;
+}
+
+.navBar{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 50px;
+}
+
+
+.follow-us{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(80, 170, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    height: 60px;
+}
+
+button:hover{
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+}
+
+.hero-section{
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("asset/Flying_Hunt_29\ \(6\).jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Menambahkan shadow */
+}
+
+
+
+.Greetings{
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+
+.kiana-name{
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+}
+
+.kiana-desc{
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+
+.follow-me{
+    background-color: rgb(80, 170, 255);
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.my-friends-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.valkryies-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.my-friends {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.valkryies-box > div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 400px; 
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px; 
+}
+
+.valkryies-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.valkryies-box h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.valkryies-box p {
+    flex-grow: 1;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto; 
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Button Colors */
+.raiden-button {
+    background-color: blueviolet;
+}
+
+.bronya-button {
+    background-color: darkgray;
+}
+
+.fu-hua-button {
+    background-color: crimson;
+}
+
+.form-sections{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("asset/194deced00031bc8461a2b72e52cea80_6638595212143838064.webp");
+    background-size: cover;
+    display: flex;
+    
+}
+
+
+
+.form-sections img{
+    width: 50%;
+}
+
+.form-sections form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    gap: 10px;
+}
+
+.form-sections label{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(244, 244, 244);
+    -webkit-text-stroke: 1px rgb(20, 18, 18);
+}
+
+.form-sections input{
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.form-sections textarea{
+    width: 80%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 10px;
+    resize: vertical;
+}
+
+
+
+header{
+    flex-wrap: wrap;
+}
+
+main{
+    flex-wrap: wrap;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    z-index: 1000;
+    border: none;
+    position: relative;
+}
+
+.hamburger {
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+    content: '';
+    position: absolute; 
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-toggle .hamburger::before {
+    transform: translateY(-10px);
+}
+
+.nav-toggle .hamburger::after {
+    transform: translateY(10px);
+}
+
+
+
+/*tablet screen sizes*/
+@media (max-width: 768px) {
+    
+    /*Hide navbar*/
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle .hamburger {
+        display: flex;
+        
+    }
+
+    .navBar {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #f9f9f9;;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        z-index: 999;
+        padding: 20px 0;
+    }
+
+    .navBar a{
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .navBar.active {
+        display: flex;
+    }
+
+    .navBar li {
+        margin: 20px 0;
+    }
+
+    .navBar li a {
+        padding: 20px 20px;
+    }
+
+    .valkryies-box {
+        flex-direction: column;
+    }
+
+    .valkryies-box div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* body.nav-active{
+        overflow: hidden;
+    } */
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+
+    .navBar li a {
+        font-size: 18px;
+    }
+
+    .nav-toggle .hamburger,
+    .nav-toggle .hamburger::before,
+    .nav-toggle .hamburger::after {
+        width: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navBar {
+        margin-bottom: 20px;
+    }
+
+    .hero-section {
+        padding: 20px 10px;
+    }
+
+    .my-friends-section {
+        padding: 10px;
+    }
+
+    .form-sections {
+        padding: 10px;
+    }
+
+    form input[type="text"], form input[type="password"], form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .valkryies-box div {
+        margin-bottom: 15px;
+    }
+}
